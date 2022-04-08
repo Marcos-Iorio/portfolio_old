@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.home_container{
+    padding: 2%;
+    background: white;
+    height: 95%;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 2px 2px 15px 0px #000000; 
+    box-shadow: inset 2px 2px 15px 0px #0000009f;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:60px 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    overflow: hidden;
+}
+
+.fWidth_row{
+    grid-column: span 2;
+}
+
+.about{
+    margin-left: 20px;
+    padding: 10%;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 20px;
+    height: 85%;
+    background: rgb(243, 243, 243);
+}
+.techs{
+    padding: 10%;
+    overflow: hidden;
+}
+
+.about_title, .tech_title{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+.about_info{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.personal_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Exo 2', sans-serif;
+    span{
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+}
+
+span{
+    position: relative;
+    z-index: 2;
+}
+
+span:before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 50%;
+    background-color: gold;
+    bottom: 0;
+    height: 40%;
+    z-index: -1;
+    width: 100%;
+
+}
+
+.contact{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 10px;
+    -webkit-box-shadow: 12px 12px 1px 0px rgba(0,0,0,0.92); 
+    box-shadow: 12px 12px 1px 0px rgba(0,0,0,0.92);
+    transition: all 0.2s ease-in-out;
+    width: 50%;
+    cursor:pointer;
+}
+
+.contact:hover{
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.92);
+    border:1px solid rgba(0, 0, 0, 0.233);
+    background: white;
+    color: black;
+}
+
+.tech_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 10px;
+}
+
+.tech_icons{
+    margin-top: 25px;
+    font-size: 30px;
+    width: 25%;
+    list-style: none;
+    color: rgb(85, 85, 85);
+    transition: all 0.2s ease;
+
+    &:first-child:hover{
+        color: #e34c26;
+    }
+   
+    &:nth-child(2):hover{
+        color: #264de4;
+    }
+    
+    &:nth-child(3):hover{
+        color: #15b4c1;
+    }
+    
+    &:nth-child(4):hover{
+        color: #CD6799;
+    }
+    
+    &:nth-child(5):hover{
+        color: #f0db4f;
+    }
+    
+    &:nth-child(6):hover{
+        color: #61DBFB;
+    }
+    
+    &:nth-child(7):hover{
+        color: #3c873a;
+    }
+
+    &:nth-child(8):hover{
+       color: #00758F;
+        
+    }
+
+    &:nth-child(9):hover{
+        color: #00758F;
+    }
+
+    &:nth-child(10):hover{
+        color: #4078c0;
+    }
+}
+
+.circle{
+    height: 15em;
+    width: 15em;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
+    position: relative;
+    margin: 0 auto;
+    margin-right: -50% !important;
+    transition: all 0.7s ease;
+
+    &:hover{
+        border-radius: 10%;
+        transform: border-radius rotate(30deg);
+        border: 1px solid black;
+        background-color: white;   
+    }
+
+    &:hover .next_section span{
+        color:black;
+        transition: all 1s ease;
+
+        &:before{
+            background: gold;
+        }
+    }
+
+    .next_section{
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+        position: absolute;
+        top: 20%;
+        left: -25%;
+        word-spacing: 10px;
+        text-decoration: none;
+        color: black;
+
+        span{
+            color:white;
+
+            &:before{
+                background: black;
+            }
+        }
+    }
+}
+
+
