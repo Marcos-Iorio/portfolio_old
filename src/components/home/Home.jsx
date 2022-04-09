@@ -2,7 +2,8 @@ import React from 'react'
 import styles from './home.module.scss'
 
 import {Link} from 'react-router-dom'
-import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNodedotjs, SiTailwindcss, SiSass, SiMysql, SiMongodb, SiGithub } from "react-icons/si";
+import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNodedotjs, SiTailwindcss, SiSass, SiMysql, SiMongodb, SiGithub, SiWordpress } from "react-icons/si";
+import {BsArrowRight} from 'react-icons/bs'
 
 const Home = () => {
     return(
@@ -27,9 +28,9 @@ const Home = () => {
                     I like the frontend and I am learning the latest technologies such as React, Express, Typescript and Mongo, my favourite language is javascript,
                     I studied and graduated as a systems analyst. Since last year i've been working as a web developer making and mantaining websites in Vtex and Wordpress. <br />
                     I would love to expand my knowledge and learn new technologies. <br/>
-                    Let's talk!
+                    
                 </p>
-                <Link to="/contact-me" className={styles.contact}>Contact me</Link> 
+                <Link to="/contact-me" className={styles.contact}>Let's talk!</Link> 
             </div>
             <div className={styles.techs}>
                 <h3 className={styles.tech_title}><span>Technologies</span></h3>
@@ -44,10 +45,12 @@ const Home = () => {
                         <li className={styles.tech_icons}><SiMysql/></li>
                         <li className={styles.tech_icons}><SiMongodb/></li>
                         <li className={styles.tech_icons}><SiGithub/></li>
+                        <li className={styles.tech_icons}><SiWordpress/></li>
+                        <li className={styles.tech_icons}>Vtex</li>
                     </ul>
-                    <Link to='/education'>
+                    <Link to='/resume'>
                         <div className={styles.circle}>
-                            <p  className={styles.next_section}>Next <span>Section</span></p>     
+                            <BsArrowRight className={styles.next_section}/>   
                         </div>
                     </Link> 
             </div>

@@ -3,6 +3,7 @@ import styles from './container.module.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from '../home/Home'
+import Resume from '../resume/Resume'
 import Navbar from '../navbar/Navbar';
 
 import { BsLinkedin, BsGithub } from "react-icons/bs";
@@ -33,6 +34,7 @@ const Container = () => {
                     <div className={styles.col}>
                         <Routes>
                             <Route exact path='/' element={<Home/>}/>
+                            <Route exact path='/resume' element={<Resume/>}/>
                         </Routes>
                     
                     </div>

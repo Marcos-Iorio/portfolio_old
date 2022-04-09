@@ -1,6 +1,6 @@
 # Porfolio
 
-Made with react
+Made with react and styled with Sass
 
 ## Usage
 
