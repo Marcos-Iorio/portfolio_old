@@ -1,11 +1,16 @@
 import React from 'react'
 import styles from './resume.module.scss'
+import {Link} from 'react-router-dom';
+import {BsArrowRight} from 'react-icons/bs'
 
 const Resume = () => {
 
     return(
         <div className={styles.education_container}>
             <div className={styles.title}>
+                <Link to='/portfolio'>
+                    <span className={styles.next_section}>Portfolio<BsArrowRight/></span>
+                </Link>
                 <span>Education & Experience</span>
             </div> 
             <div className={styles.left_col}>
@@ -16,10 +21,16 @@ const Resume = () => {
                         A bilingual school.
                     </p>
                 </div>
-                <div className={styles.job}>
-                    2021-PRESENT <br/>
-                    <span>Working as Web developer in Lund Marketing.</span>
-                    <p>I create and mantain websites in Wordpress and Vtex, i improved a lot my css skills and i've learn about analytics and SEO.</p>
+                <div className={styles.course}>
+                    2021 <br />
+                    <span>Web Development in CorderHouse.</span>
+                    <p>I learned HTML, CSS, SASS, GITHUB.</p>
+                </div>
+                <div className={styles.course}>
+                    2021 <br />
+                    <span>Modern Javascript in Udemy.</span>
+                    <p>I've learned the basics of Javascript and the last standards too like Destructuring, Array Method, Arrow Function, Prototypes, Polyfiling.</p>
+
                 </div>
             </div>
             <div>
@@ -35,17 +46,12 @@ const Resume = () => {
                         Here I've learned the fundamentals of programming in languages like C and OOP in JAVA, also I learned CRUD and API with Slim in PHP, MySQL and Angular.
                     </p>
                 </div>
-                <div className={styles.course}>
-                    2021 <br />
-                    <span>Web Development in CorderHouse.</span>
-                    <p>I learn HTML, CSS, SASS, GITHUB.</p>
+                <div className={styles.job}>
+                    2021-PRESENT <br/>
+                    <span>Working as Web developer in Lund Marketing.</span>
+                    <p>I create and mantain websites in Wordpress and Vtex, I improved a lot my css skills and I've learn about analytics and SEO.</p>
                 </div>
-                <div className={styles.course}>
-                    2021 <br />
-                    <span>Modern Javascript in Udemy.</span>
-                    <p>I've learned the basics of Javascript and the last standards too like Destructuring, Array Method, Arrow Function, Prototypes, Polyfiling.</p>
-
-                </div>
+                
             </div>
 
         </div>

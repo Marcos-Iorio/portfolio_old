@@ -23,7 +23,7 @@ const Container = () => {
                     <div className={styles.col}>
                         <div className={styles.titulo}>
                             <div>Marcos Iorio</div>
-                            <p>Front-end Developer</p>
+                            <p>Jr. Front-end Developer</p>
                         </div>
                         <div className={styles.social}>
                             <a href=""><BsLinkedin className={styles.linkedin}/></a>

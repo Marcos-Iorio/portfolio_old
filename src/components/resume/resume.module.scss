@@ -35,9 +35,10 @@
 
 .title{
     grid-column: span 3;
+    position: relative;
     padding-left: 3%;
+
     & span{
-        
         font-family: $header-font;
         font-weight: 600;
         font-size: 30px;
@@ -49,6 +50,45 @@
     }   
 
 }
+
+.next_section{
+    font-family: $body-font;
+    font-weight: 600;
+    font-size: 20px !important;
+    line-height: 20px;
+    position: absolute;
+    bottom: 30%;
+    right: 0%;
+    word-spacing: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.5 ease;
+
+    &:before{
+        content: '';
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        left: -10px;
+        height: 50%;
+        width: 0;
+        background: lightcoral;
+        z-index: -1;
+        transition: .3s;   
+    }  
+
+    svg{
+        vertical-align: -4px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+}
+
+.next_section:hover:before{
+    width: 100%;
+    transition: all 0.5 ease;
+}
+
 
 .left_col, .right_col{
     padding: 5%;
@@ -72,6 +112,7 @@
     position: relative;
     margin-right: 10px;
     height: fit-content;
+    margin-bottom: 10em;
 
     & span{
         color: white;   
@@ -97,7 +138,7 @@
 }
 
 .job{
-    margin-top: 30em;
+    margin-top: 19em;
     font-family: $body-font;
     background: #333;
     color: rgb(201, 201, 201);
@@ -125,16 +166,16 @@
         position: absolute;
         width: 0;
         height: 0;
-        border-bottom: 15px solid #333;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        bottom: 0;
-        right: -12px;
+        border-top: 17px solid #333;
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+        top: 0px;
+        left: -10px;
     }
 }
 
 .university{
-    margin-top: 120px;
+    margin-top: 200px;
     font-family: $body-font;
     background: #333;
     color: rgb(201, 201, 201);
@@ -169,7 +210,7 @@
 }
 
 .course{
-    margin-top: 50px;
+    margin-top: 3em;
     font-family: $body-font;
     background: #333;
     color: rgb(201, 201, 201);
@@ -193,12 +234,38 @@
         position: absolute;
         width: 0;
         height: 0;
-        border-top: 17px solid #333;
-        border-left: 16px solid transparent;
-        border-right: 16px solid transparent;
-        top: 0px;
-        left: -10px;
+        border-bottom: 15px solid #333;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        bottom: 0;
+        right: -12px;
     }
-
-   
 }
+
+@keyframes move {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: translateX(10px);
+    }
+  
+    80% {
+      transform: translateX(8px);
+    }
+  
+    90% {
+      transform: translateX(-8px);
+    }
+  }
