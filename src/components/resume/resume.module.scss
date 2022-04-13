@@ -14,8 +14,6 @@
     grid-row-gap: 0px;
     overflow-y: auto;
     overflow-x: hidden;
-
-    
 }
 
 ::-webkit-scrollbar-thumb{
@@ -31,7 +29,7 @@
 
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
 
 .title{
     grid-column: span 3;

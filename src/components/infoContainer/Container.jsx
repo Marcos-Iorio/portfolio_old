@@ -7,6 +7,7 @@ import Resume from '../resume/Resume'
 import Navbar from '../navbar/Navbar';
 
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import Portfolio from '../portfolio/Portfolio';
 
 const Container = () => {
 
@@ -23,11 +24,11 @@ const Container = () => {
                     <div className={styles.col}>
                         <div className={styles.titulo}>
                             <div>Marcos Iorio</div>
-                            <p>Jr. Front-end Developer</p>
+                            <p>Software developer</p>
                         </div>
                         <div className={styles.social}>
                             <a href=""><BsLinkedin className={styles.linkedin}/></a>
-                            <a href=""><BsGithub className={styles.github}/></a>
+                            <a href="https://github.com/Marcos-Iorio"><BsGithub className={styles.github}/></a>
                         </div>
                         <a onClick={downloadCV} className={styles.download} >Download CV</a> 
                     </div>
@@ -35,6 +36,7 @@ const Container = () => {
                         <Routes>
                             <Route exact path='/' element={<Home/>}/>
                             <Route exact path='/resume' element={<Resume/>}/>
+                            <Route exact path='/portfolio' element={<Portfolio/>}/>
                         </Routes>
                     
                     </div>
