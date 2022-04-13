@@ -27,10 +27,10 @@ const Container = () => {
                             <p>Software developer</p>
                         </div>
                         <div className={styles.social}>
-                            <a href=""><BsLinkedin className={styles.linkedin}/></a>
-                            <a href="https://github.com/Marcos-Iorio"><BsGithub className={styles.github}/></a>
+                            <a href="" target="_blank"><BsLinkedin className={styles.linkedin}/></a>
+                            <a href="https://github.com/Marcos-Iorio" target="_blank"><BsGithub className={styles.github}/></a>
                         </div>
-                        <a onClick={downloadCV} className={styles.download} >Download CV</a> 
+                        <a onClick={downloadCV} className={styles.download} download>Download CV</a> 
                     </div>
                     <div className={styles.col}>
                         <Routes>

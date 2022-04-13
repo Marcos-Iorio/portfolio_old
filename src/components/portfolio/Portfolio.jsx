@@ -25,8 +25,8 @@ const Portfolio = () => {
                             <h1>Real time chat app</h1>
                             <p>A real time chat app using React and tailwind in the front-end and Express and Socket.io in the back, to save all the messages I used MongoDB.</p>
                             <div className={styles.links}>
-                                <a href="https://realtime-chat-marcos-iorio.vercel.app/">Demo</a>
-                                <a href="https://github.com/Marcos-Iorio/realtime-chat">Repo</a>
+                                <a href="https://realtime-chat-marcos-iorio.vercel.app/" target="_blank">Demo</a>
+                                <a href="https://github.com/Marcos-Iorio/realtime-chat" target="_blank">Repo</a>
                             </div>
                         </div>
                     </div>
@@ -44,8 +44,8 @@ const Portfolio = () => {
                             <h1>Pokemon Guess</h1>
                             <p>Pokemon guess challenge using React, Typescript and NES.CSS</p>
                             <div className={styles.links}>
-                                <a href="https://pokemon-guess-challenge.vercel.app/">Demo</a>
-                                <a href="https://github.com/Marcos-Iorio/Pokemon-guess-challenge">Repo</a>
+                                <a href="https://pokemon-guess-challenge.vercel.app/" target="_blank">Demo</a>
+                                <a href="https://github.com/Marcos-Iorio/Pokemon-guess-challenge" target="_blank">Repo</a>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const Portfolio = () => {
                             <p>First project using react, I created the front-end of a ecommerce where you search for a product, I used the Mercado libre's API to retrieve the products data.</p>
                             <div className={styles.links}>
                                 {/* <a href="https://pokemon-guess-challenge.vercel.app/">Demo</a> */}
-                                <a href="https://github.com/Marcos-Iorio/Ecommerce">Repo</a>
+                                <a href="https://github.com/Marcos-Iorio/Ecommerce" target="_blank">Repo</a>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,7 @@ const Portfolio = () => {
                             <p>Intermediate API that retrieves data from another API using Express and Typescript</p>
                             <div className={styles.links}>
                                 {/* <a href="https://pokemon-guess-challenge.vercel.app/">Demo</a> */}
-                                <a href="https://github.com/Marcos-Iorio/api-intermedia">Repo</a>
+                                <a href="https://github.com/Marcos-Iorio/api-intermedia" target="_blank">Repo</a>
                             </div>
                         </div>
                     </div>
