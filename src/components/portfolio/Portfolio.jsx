@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { SiReact, SiTailwindcss, SiSocketdotio, SiMongodb, SiTypescript, SiNodedotjs} from 'react-icons/si'
+import { SiReact, SiTailwindcss, SiSocketdotio, SiMongodb, SiTypescript, SiNodedotjs, SiWordpress} from 'react-icons/si'
 import styles from './portfolio.module.scss'
 
 const Portfolio = () => {
@@ -10,15 +10,14 @@ const Portfolio = () => {
             <ul className={styles.projects_list}>
                 <li className={styles.project}>
                     <div className={styles.project_img}>
-                        <img src="../../../assets/realtime.PNG" alt="Real time chat photo" />
-                        <div className={styles.project_techs}>
+                    <div className={styles.project_techs}>
                             <SiReact className={styles.project_icon}/>
                             <SiTailwindcss className={styles.project_icon}/>
                             <SiNodedotjs className={styles.project_icon}/>
                             <SiSocketdotio className={styles.project_icon}/>
                             <SiMongodb className={styles.project_icon}/>
                         </div>
-                        
+                        <img src="../../../assets/projects/realtime.PNG" alt="Real time chat photo" loading='lazy'/>
                     </div>
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>
@@ -33,11 +32,11 @@ const Portfolio = () => {
                 </li>
                 <li className={styles.project}>
                     <div className={styles.project_img}>
-                        <img src="../../../assets/pokemon.png" alt="Pokemon guess challenge photo" />
                         <div className={styles.project_techs}>
                             <SiReact className={styles.project_icon}/>
                             <SiTypescript className={styles.project_icon}/>
-                        </div>   
+                        </div> 
+                        <img src="../../../assets/projects/pokemon.png" alt="Pokemon guess challenge photo" loading='lazy'/>   
                     </div>
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>
@@ -52,16 +51,16 @@ const Portfolio = () => {
                 </li>
                 <li className={styles.project}>
                     <div className={styles.project_img}>
-                        <img src="../../../assets/ecommerce.png" alt="Front-end of a ecommerce" />
                         <div className={styles.project_techs}>
                             <SiReact className={styles.project_icon}/>
                             <SiTailwindcss className={styles.project_icon}/>
-                        </div>   
+                        </div> 
+                        <img src="../../../assets/projects/ecommerce.png" alt="Front-end of a ecommerce" loading='lazy'/>  
                     </div>
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>
                             <h1>Front-end of Ecommerce</h1>
-                            <p>First project using react, I created the front-end of a ecommerce where you search for a product, I used the Mercado libre's API to retrieve the products data.</p>
+                            <p>First project using react, I created the front-end of a ecommerce where you search for a product, I used a Intermediate API to retrieve the products data.</p>
                             <div className={styles.links}>
                                 {/* <a href="https://pokemon-guess-challenge.vercel.app/">Demo</a> */}
                                 <a href="https://github.com/Marcos-Iorio/Ecommerce" target="_blank">Repo</a>
@@ -71,11 +70,11 @@ const Portfolio = () => {
                 </li>
                 <li className={styles.project}>
                     <div className={styles.project_img}>
-                        <img src="../../../assets/api.png" alt="Illustration of a API" />
                         <div className={styles.project_techs}>
                             <SiNodedotjs className={styles.project_icon}/>
                             <SiTypescript className={styles.project_icon}/>
-                        </div>   
+                        </div>
+                        <img src="../../../assets/projects/api.png" alt="Illustration of a API" loading='lazy'/>   
                     </div>
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>
@@ -84,6 +83,24 @@ const Portfolio = () => {
                             <div className={styles.links}>
                                 {/* <a href="https://pokemon-guess-challenge.vercel.app/">Demo</a> */}
                                 <a href="https://github.com/Marcos-Iorio/api-intermedia" target="_blank">Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li className={styles.project}>
+                    <div className={styles.project_img}>
+                        <div className={styles.project_techs}>
+                            <SiWordpress className={styles.project_icon}/>
+                        </div>
+                        <img src="../../../assets/projects/sdg.png" alt="Photo of SGD homepage" loading='lazy'/>   
+                    </div>
+                    <div className={styles.project_info_container}>
+                        <div className={styles.project_info}>
+                            <h1>SDG</h1>
+                            <p>Webpage made with Wordpress for a client of Ireland</p>
+                            <div className={styles.links}>
+                                {/* <a href="https://pokemon-guess-challenge.vercel.app/">Demo</a> */}
+                                <a href="https://sdg-hub.co/" target="_blank">Web page</a>
                             </div>
                         </div>
                     </div>

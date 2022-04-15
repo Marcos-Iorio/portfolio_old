@@ -7,32 +7,11 @@
     border-radius: 10px;
     -webkit-box-shadow: inset 2px 2px 15px 0px #000000; 
     box-shadow: inset 2px 2px 15px 0px #0000009f;
-    display: grid;
-    grid-template-columns: 1fr 10px 1fr;
-    grid-template-rows: 60px 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar-thumb{
-    background: lightcoral;
-    border-radius: 16px;
-    margin: 10px;
-}
-
-::-webkit-scrollbar-track{
-    margin: 1%;
-    background: transparent;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
 .title{
-    grid-column: span 3;
     position: relative;
     padding-left: 3%;
 
@@ -87,183 +66,52 @@
     transition: all 0.5 ease;
 }
 
-
-.left_col, .right_col{
-    padding: 5%;
+ul{
+    padding: 0;
 }
 
-.line_time{
-    text-align: center;
-    background: black;
-    height: 100%;
-    width: 2%;
+.education_list, .experience_list{
+    padding: 5%;
+    width: 80%;
+    position: relative;
+}
+
+li{
     margin: 0;
 }
 
-.school{
-    font-family: $body-font;
-    background: #333;
-    color: rgb(201, 201, 201);
-    border-radius: 10px;
-    padding: 5%;
-    text-align: right;
-    position: relative;
-    margin-right: 10px;
-    height: fit-content;
-    margin-bottom: 10em;
+.item{
+    list-style-type: none;
+    padding: 6%;
+    background:rgb(243, 243, 243);
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 20px;
+    width: 100%;
+    height: 100px;
+    color: #333;
+    display: grid;
+    place-content: center;
+    margin-bottom: 30px;
+    box-sizing: content-box;
 
-    & span{
-        color: white;   
-        font-size: 20px;
-        width: 100%;
-
-        &:before{
-            background: none !important;
-        }
+    p{
+        margin: 5px;
+        font-family: $body-font;
+        color: #333
     }
 
-    &:before{
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-bottom: 15px solid #333;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        bottom: 0;
-        right: -12px;
-    }
-}
-
-.job{
-    margin-top: 19em;
-    font-family: $body-font;
-    background: #333;
-    color: rgb(201, 201, 201);
-    border-radius: 10px;
-    padding: 5%;
-    text-align: right;
-    position: relative;
-    margin-right: 10px;
-    height: fit-content;
-
-    & span{
-        color: white;   
-        font-size: 20px;
+    span{
+        font-size: 25px;
+        font-family: $header-font;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: black;
         width: 100%;
-        margin-top: 20px;
+    }
+
+    span:before{
+        width: 5%;
+        background: lightcoral;
         height: 100%;
-
-        &:before{
-            background: none !important;
-        }
-    }
-
-    &:before{
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-top: 17px solid #333;
-        border-left: 16px solid transparent;
-        border-right: 16px solid transparent;
-        top: 0px;
-        left: -10px;
     }
 }
-
-.university{
-    margin-top: 200px;
-    font-family: $body-font;
-    background: #333;
-    color: rgb(201, 201, 201);
-    border-radius: 10px;
-    padding: 5%;
-    text-align: left;
-    position: relative;
-    height: fit-content;
-
-    & span{
-        color: white;   
-        font-size: 20px;
-
-        &:before{
-            background: none !important;
-        }
-    }
-
-    &:before{
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-top: 17px solid #333;
-        border-left: 16px solid transparent;
-        border-right: 16px solid transparent;
-        top: 0px;
-        left: -10px;
-    }
-
-   
-}
-
-.course{
-    margin-top: 3em;
-    font-family: $body-font;
-    background: #333;
-    color: rgb(201, 201, 201);
-    border-radius: 10px;
-    padding: 5%;
-    text-align: left;
-    position: relative;
-    height: fit-content;
-
-    & span{
-        color: white;   
-        font-size: 20px;
-
-        &:before{
-            background: none !important;
-        }
-    }
-
-    &:before{
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-bottom: 15px solid #333;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        bottom: 0;
-        right: -12px;
-    }
-}
-
-@keyframes move {
-    0%,
-    100% {
-      transform: translateX(0);
-    }
-  
-    10%,
-    30%,
-    50%,
-    70% {
-      transform: translateX(-10px);
-    }
-  
-    20%,
-    40%,
-    60% {
-      transform: translateX(10px);
-    }
-  
-    80% {
-      transform: translateX(8px);
-    }
-  
-    90% {
-      transform: translateX(-8px);
-    }
-  }
