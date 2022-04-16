@@ -1,13 +1,13 @@
 import React, {useRef, useState} from 'react';
-import styles from './container.module.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
+import Navbar from '../navbar/Navbar';
+import styles from './container.module.scss';
+import Portfolio from '../portfolio/Portfolio';
+import Contact from '../contact/Contact';
 import Home from '../home/Home'
 import Resume from '../resume/Resume'
-import Navbar from '../navbar/Navbar';
-
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import Portfolio from '../portfolio/Portfolio';
 
 const Container = () => {
     const [modal, setModal] = useState(false);
@@ -32,7 +32,7 @@ const Container = () => {
                         </div>
                         <div className={styles.madeBy}>
                             <div className={styles.social}>
-                                <a href="" target="_blank"><BsLinkedin className={styles.linkedin}/></a>
+                                <a href="https://www.linkedin.com/in/marcos-ignacio-iorio-93a31a191/" target="_blank"><BsLinkedin className={styles.linkedin}/></a>
                                 <a href="https://github.com/Marcos-Iorio" target="_blank"><BsGithub className={styles.github}/></a>
                             </div>
                             <button onClick={downloadCV} className={styles.download} download>Download CV</button>
@@ -44,8 +44,8 @@ const Container = () => {
                             <Route exact path='/' element={<Home/>}/>
                             <Route exact path='/resume' element={<Resume/>}/>
                             <Route exact path='/portfolio' element={<Portfolio/>}/>
+                            <Route exact path='/contact-me' element={<Contact/>}/>
                         </Routes>
-                    
                     </div>
                 </div>
                 {modal ?
