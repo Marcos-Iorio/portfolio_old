@@ -106,3 +106,40 @@
         font-size: 25px;
     }
 }
+
+//Mobile
+
+@media (max-width: 1224px){
+    .contact_container{
+        background-color: transparent;
+        box-shadow: none;
+        
+        .title{
+            width: 100%;
+            color: white;
+
+            span:before{
+                background-color: darkseagreen;
+            }
+        }
+
+        label{
+            color: white;
+        }
+
+        .contact{
+            color: white;
+            border: 1px solid white;
+            width: 80%;
+        }
+        
+        .or_linkedin{
+            color: white;
+
+            a{
+                color: #555;
+                font-size: 30px;
+            }
+        }
+    }
+}

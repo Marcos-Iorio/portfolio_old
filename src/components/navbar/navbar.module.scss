@@ -1,5 +1,9 @@
 @import "../vars.scss";
 
+:root{
+    width: 100%;
+}
+
 .navbar_wrapper{
     background: rgba(0, 0, 0, 0.753);
     border-radius: 16px;
@@ -80,4 +84,97 @@ li, .active{
     z-index: -1;
     transition: .3s;
     width: calc(100% + 20px);
+}
+
+//Mobile
+.open_menu{
+    color: black; 
+    font-size: 20px;
+    height: 100%;
+}
+
+.close_menu{
+    color: black;
+    font-size: 25px;
+    float: right;
+    padding: 5%;
+}
+
+.open{
+    position: fixed;
+    height: 100vh;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    top: 0;
+    left: 0;
+    transform: translateX(0%);
+    transition: all 0.4s ease;
+    overflow: hidden;
+    box-shadow: none;
+
+    .madeBy{
+        color: #555;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 13px;
+        align-self: center;
+    }
+}
+
+.closed{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    top: 0;
+    left: 0;
+    transform: translateX(-150%);
+    transition: all 0.4s ease;
+    box-shadow: none;
+}
+
+@media (max-width: 1224px) {
+    .navbar_wrapper{
+        background: white;
+        position: fixed;
+        display: static;
+        border: 0;
+        border-radius: 0;
+        left: 0px;
+        top: 0;
+        margin: 0;
+        max-width: none;
+        width: 89%;
+        padding: 10px 20px;
+        z-index: 1000;
+        box-shadow: none;
+    }
+
+    .items_list{
+        flex-direction: column;
+        padding: 5%;
+        align-items: flex-start;
+        justify-content: start;
+        height: 100%;
+        width: 92%;
+
+        li{
+            width: 100%;
+            text-align: left;
+        }
+
+        .item:before{
+            background: rgb(187, 185, 185);
+        }
+
+        .item{
+            color: #222;
+            text-align: left;
+
+        }
+    }
 }

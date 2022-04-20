@@ -3,6 +3,11 @@
   text-align: center;
 }
 
+body{
+  overflow-x: hidden;
+  overflow-y: auto !important;
+}
+
 .main{
   height: 100vh;
   position: relative;

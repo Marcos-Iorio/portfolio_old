@@ -115,3 +115,32 @@ li{
         height: 100%;
     }
 }
+
+//Mobile
+
+@media (max-width: 1224px){
+    .education_container{
+        padding: 2%;
+        background: transparent;
+        height: 95%;
+        border-radius: 10px;
+        -webkit-box-shadow: none; 
+        box-shadow: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .title{
+            color: white;
+            text-align: center;
+        }
+    }
+
+    .next_section{
+        display: none;
+    }
+
+    .item{
+        height: fit-content;
+    }
+
+}

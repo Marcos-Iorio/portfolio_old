@@ -6,7 +6,7 @@ import {BsArrowRight} from 'react-icons/bs'
 const Resume = () => {
 
     return(
-        <div className={styles.education_container}>
+        <div className={styles.education_container} id="resume">
             <div className={styles.title}>
                 <Link to='/portfolio'>
                     <span className={styles.next_section}>Portfolio<BsArrowRight/></span>

@@ -4,10 +4,14 @@ import styles from './home.module.scss'
 import {Link} from 'react-router-dom'
 import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNodedotjs, SiTailwindcss, SiSass, SiMysql, SiMongodb, SiGithub, SiWordpress } from "react-icons/si";
 import {BsArrowRight} from 'react-icons/bs'
+import { useMediaQuery } from 'react-responsive'
 
 const Home = () => {
+
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+
     return(
-        <div className={styles.home_container}>
+        <div className={styles.home_container} id="about">
             <div className={styles.fWidth_row}>
                 <div className={styles.personal_info}>
                     <p>
@@ -30,7 +34,9 @@ const Home = () => {
                     I would love to expand my knowledge and learn new technologies. <br/>
                     
                 </p>
-                <Link to="/contact-me" className={styles.contact}>Let's talk!</Link> 
+                {!isTabletOrMobile ? <Link to="/contact-me" className={styles.contact}>Let's talk!</Link> : <a href="#contact-me" className={styles.contact}>Let's talk</a>}
+                 
+                
             </div>
             <div className={styles.techs}>
                 <h3 className={styles.tech_title}><span>Technologies</span></h3>

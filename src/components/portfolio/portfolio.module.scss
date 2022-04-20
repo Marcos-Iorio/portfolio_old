@@ -178,3 +178,78 @@
         }
     }
 }
+
+
+//mobile
+
+@media (max-width:1224px){
+    .portfolio_container{
+        background: transparent;
+        box-shadow: none;
+        overflow-y: hidden;
+        height: fit-content;
+
+        .title{
+            width: 100%;
+            color: white;
+            padding-left: 0;
+
+            &:before{
+               left: 70px;
+                width: 57%;
+            }
+        }
+    }
+
+    .projects_list{
+        gap: 0px;
+        margin-bottom: 0;
+    }
+
+    .project{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5%;
+        height: 80%;
+
+        .project_img{
+            justify-content: center;
+            align-self: end;
+
+            .project_techs{
+                .project_icon{
+                    color: #555;
+                }
+            }
+    
+        }
+
+        
+        .project_info_container{
+            width: 100%;
+            left: -2%;
+
+            .project_info{
+                h1{
+                    margin-left: 0;
+                    width: 100%;
+                }
+
+                p{
+                    margin-left: 0;
+                    width: 100%;
+                }
+
+                .links{
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+
+            
+        }
+    }
+
+}

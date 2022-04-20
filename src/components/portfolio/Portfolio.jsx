@@ -5,12 +5,12 @@ import styles from './portfolio.module.scss'
 
 const Portfolio = () => {
     return(
-        <div className={styles.portfolio_container}>
+        <div className={styles.portfolio_container} id="portfolio">
             <h3 className={styles.title}>My projects</h3>
             <ul className={styles.projects_list}>
                 <li className={styles.project}>
                     <div className={styles.project_img}>
-                    <div className={styles.project_techs}>
+                        <div className={styles.project_techs}>
                             <SiReact className={styles.project_icon}/>
                             <SiTailwindcss className={styles.project_icon}/>
                             <SiNodedotjs className={styles.project_icon}/>

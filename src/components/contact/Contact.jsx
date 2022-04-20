@@ -35,7 +35,10 @@ const Contact = () =>{
         }
 
         if((user_name.current.value === '' || user_name.current.value === undefined) || (user_mail.current.value === '' || user_mail.current.value === undefined) || (message.current.value === '' || message.current.value === undefined)){
-            resultMessage.current.textContent = "Please, fill the form"
+            resultMessage.current.textContent = "Please, fill the form";
+            setTimeout(() =>{
+                resultMessage.current.remove()
+            }, 5000)
         }else{
             setIsLoading(true);
             emailjs.send(envs.service, envs.template, templateParams)
@@ -50,14 +53,17 @@ const Contact = () =>{
                 }
                 form.current.reset()
             }, (error) => {
-                console.log(error.text);
+                resultMessage.current.textContent('An error has ocurred please contact me via Mail: marcossiorio@gmail.com')
+                setTimeout(() =>{
+                    resultMessage.current.remove()
+                }, 5000)
             });
             
         }
     }
 
     return(
-        <div className={styles.contact_container}>
+        <div className={styles.contact_container} id="contact-me">
             <div className={styles.title}>
                 <span>Reach me!</span>
             </div>
