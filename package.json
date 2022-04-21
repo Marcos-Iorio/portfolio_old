@@ -9,15 +9,13 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
-    "dotenv": "^16.0.0",
-    "node-sass": "^7.0.1",
     "party-js": "^2.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-responsive": "^9.0.0-beta.6",
-    "react-tsparticles": "^1.43.1",
-    "tsparticles": "^1.43.1"
+    "react-tsparticles": "^2.0.6",
+    "tsparticles": "^2.0.6"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
