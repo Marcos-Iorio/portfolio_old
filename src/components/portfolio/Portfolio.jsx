@@ -3,9 +3,17 @@ import React from 'react'
 import { SiReact, SiTailwindcss, SiSocketdotio, SiMongodb, SiTypescript, SiNodedotjs, SiWordpress} from 'react-icons/si'
 import styles from './portfolio.module.scss'
 
+import { Helmet } from 'react-helmet'
+
 const Portfolio = () => {
     return(
-        <div className={styles.portfolio_container} id="portfolio">
+        <main>
+            <Helmet>
+                <meta charSet='utf-8'/>
+                <title>My projects - Marcos Iorio</title>
+                <meta name="description" content="List of all the projects I've done so far" />
+            </Helmet>
+            <div className={styles.portfolio_container} id="portfolio">
             <h3 className={styles.title}>My projects</h3>
             <ul className={styles.projects_list}>
                 <li className={styles.project}>
@@ -107,6 +115,8 @@ const Portfolio = () => {
                 </li>
             </ul>
         </div>
+        </main>
+        
     );
 }
 

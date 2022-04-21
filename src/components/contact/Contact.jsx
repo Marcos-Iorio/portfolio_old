@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react'
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import party, { confetti } from "party-js";
 import emailjs from '@emailjs/browser';
+import {Helmet} from 'react-helmet';
 
 import styles from './contact.module.scss';
 
@@ -63,32 +64,39 @@ const Contact = () =>{
     }
 
     return(
-        <div className={styles.contact_container} id="contact-me">
-            <div className={styles.title}>
-                <span>Reach me!</span>
-            </div>
-            <form action="" className={styles.form_container} onSubmit={sendMail} ref={form}>
-                <label htmlFor="name">Name*</label>
-                <input type="text" name="user_name" placeholder="Your name :)" ref={user_name} required/>
-                <label htmlFor="mail">Mail*</label>
-                <input type="mail" name="user_mail" id="" placeholder="example@123.com" ref={user_mail} required/>
-                <label htmlFor="message">Message*</label>
-                <textarea name="message" cols="30" rows="7" placeholder="Your message..." ref={message} required></textarea>
-                <div ref={resultMessage} style={{color: 'red', fontSize: '20px', fontWeight:'500'}}></div>
-                <input
-                    type="submit"
-                    ref={sendButton}
-                    className={styles.contact}
-                    value={!isLoading ? 'Send' : 'Sending...'}>
-                </input>
-                <div id="confettiParticle"></div>
-                <div className={styles.or_linkedin}>
-                    <p>Or</p>
-                    <a href="https://www.linkedin.com/in/marcos-ignacio-iorio-93a31a191/" target="_blank"><BsLinkedin/></a>
+        <main>
+            <Helmet>
+                <meta charSet='utf-8'/>
+                <title>Contact me - Marcos Iorio</title>
+                <meta name="description" content="Contact me sending a e-mail o throught Linkedin" />
+            </Helmet>
+            <div className={styles.contact_container} id="contact-me">
+                <div className={styles.title}>
+                    <span>Reach me!</span>
                 </div>
-            </form>
-            
-        </div>
+                <form action="" className={styles.form_container} onSubmit={sendMail} ref={form}>
+                    <label htmlFor="name">Name*</label>
+                        <input type="text" name="user_name" placeholder="Your name :)" ref={user_name} required/>
+                    <label htmlFor="mail">Mail*</label>
+                        <input type="mail" name="user_mail" id="" placeholder="example@123.com" ref={user_mail} required/>
+                    <label htmlFor="message">Message*</label>
+                        <textarea name="message" cols="30" rows="7" placeholder="Your message..." ref={message} required></textarea>
+                    <div ref={resultMessage} style={{color: 'red', fontSize: '20px', fontWeight:'500'}}></div>
+                    <input
+                        type="submit"
+                        ref={sendButton}
+                        className={styles.contact}
+                        value={!isLoading ? 'Send' : 'Sending...'}>
+                    </input>
+                    <div id="confettiParticle"></div>
+                    <div className={styles.or_linkedin}>
+                        <p>Or</p>
+                        <a href="https://www.linkedin.com/in/marcos-ignacio-iorio-93a31a191/" target="_blank"><BsLinkedin/></a>
+                    </div>
+                </form>
+            </div>
+        </main>
+        
 
     );
 

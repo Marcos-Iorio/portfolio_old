@@ -3,10 +3,18 @@ import styles from './resume.module.scss'
 import {Link} from 'react-router-dom';
 import {BsArrowRight} from 'react-icons/bs'
 
+import { Helmet } from 'react-helmet';
+
 const Resume = () => {
 
     return(
-        <div className={styles.education_container} id="resume">
+        <main>
+            <Helmet>
+                <meta charSet='utf-8'/>
+                <title>Resume - Marcos Iorio</title>
+                <meta name="description" content="My education, and my experience working in IT" />
+            </Helmet>
+            <div className={styles.education_container} id="resume">
             <div className={styles.title}>
                 <Link to='/portfolio'>
                     <span className={styles.next_section}>Portfolio<BsArrowRight/></span>
@@ -53,6 +61,8 @@ const Resume = () => {
                 </li>
             </ul>
         </div>
+        </main>
+        
     );
 
 }
