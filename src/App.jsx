@@ -1,6 +1,6 @@
-import { useState, Suspense, lazy } from 'react'
 
 import './App.scss'
+
 import Particles  from './components/particles/Particles'
 import Container from './components/infoContainer/Container'
 import { useMediaQuery } from 'react-responsive'

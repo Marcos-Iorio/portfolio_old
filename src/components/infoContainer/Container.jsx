@@ -1,5 +1,5 @@
-import React, {useRef, useState, Suspense, lazy} from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, {useState, Suspense, lazy} from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 
@@ -9,9 +9,7 @@ const Portfolio = lazy(() => import('../portfolio/Portfolio'));
 const Navbar = lazy(() => import('../navbar/Navbar'));
 
 import ErrorBoundary from '../errorBoundary/ErrorBoundary';
-
 import styles from './container.module.scss'
-
 import Resume from '../resume/Resume'
 
 import { useMediaQuery } from 'react-responsive'
