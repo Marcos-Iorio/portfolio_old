@@ -1,4 +1,5 @@
 import React, {useState, Suspense, lazy} from 'react';
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 
