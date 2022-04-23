@@ -1,8 +1,9 @@
 import React, {useRef, useState} from 'react'
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+
 import party, { confetti } from "party-js";
 import emailjs from '@emailjs/browser';
-import {Helmet} from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import styles from './contact.module.scss';
 
@@ -26,6 +27,7 @@ const Contact = () =>{
             template: import.meta.env.VITE_TEMPLATE_ID,
             public_key: import.meta.env.VITE_PUBLIC_KEY,
         }
+        
         emailjs.init(envs.public_key);
 
         const templateParams = {
@@ -65,11 +67,13 @@ const Contact = () =>{
 
     return(
         <main>
-            <Helmet>
-                <meta charSet='utf-8'/>
-                <title>Contact me - Marcos Iorio</title>
-                <meta name="description" content="Contact me sending a e-mail o throught Linkedin" />
-            </Helmet>
+            <HelmetProvider>
+                <Helmet>
+                    <meta charSet='utf-8'/>
+                    <title>Contact me - Marcos Iorio</title>
+                    <meta name="description" content="Contact me sending a e-mail o throught Linkedin" />
+                </Helmet>
+            </HelmetProvider>
             <div className={styles.contact_container} id="contact-me">
                 <div className={styles.title}>
                     <span>Reach me!</span>

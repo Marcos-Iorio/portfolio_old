@@ -4,8 +4,9 @@ import styles from './home.module.scss'
 import {Link} from 'react-router-dom'
 import { SiJavascript, SiHtml5, SiCss3, SiReact, SiNodedotjs, SiTailwindcss, SiSass, SiMysql, SiMongodb, SiGithub, SiWordpress } from "react-icons/si";
 import {BsArrowRight} from 'react-icons/bs'
+
 import { useMediaQuery } from 'react-responsive'
-import {Helmet} from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Home = () => {
 
@@ -13,11 +14,13 @@ const Home = () => {
 
     return(
         <main>
-            <Helmet>
-                <meta charSet='utf-8'/>
-                <title>About me - Marcos Iorio</title>
-                <meta name="description" content="I am a proactive person who likes to work in teams.." />
-            </Helmet>
+            <HelmetProvider>
+                <Helmet>
+                    <meta charSet='utf-8'/>
+                    <title>About me - Marcos Iorio</title>
+                    <meta name="description" content="I am a proactive person who likes to work in teams.." />
+                </Helmet>
+            </HelmetProvider>
             <div className={styles.home_container} id="about">
                 <div className={styles.fWidth_row}>
                     <div className={styles.personal_info}>

@@ -3,17 +3,19 @@ import styles from './resume.module.scss'
 import {Link} from 'react-router-dom';
 import {BsArrowRight} from 'react-icons/bs'
 
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Resume = () => {
 
     return(
         <main>
-            <Helmet>
-                <meta charSet='utf-8'/>
-                <title>Resume - Marcos Iorio</title>
-                <meta name="description" content="My education, and my experience working in IT" />
-            </Helmet>
+            <HelmetProvider>
+                <Helmet>
+                    <meta charSet='utf-8'/>
+                    <title>Resume - Marcos Iorio</title>
+                    <meta name="description" content="My education, and my experience working in IT" />
+                </Helmet>
+            </HelmetProvider>
             <div className={styles.education_container} id="resume">
             <div className={styles.title}>
                 <Link to='/portfolio'>
