@@ -28,7 +28,7 @@ const Portfolio = () => {
                             <SiSocketdotio className={styles.project_icon}/>
                             <SiMongodb className={styles.project_icon}/>
                         </div>
-                        <img src="../../assets/realtime.PNG" alt="Real time chat photo" loading='lazy'/>
+                        <img src="../../../assets/projects/realtime.PNG" alt="Real time chat photo" loading='lazy'/>
                     </div>
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>
@@ -47,7 +47,7 @@ const Portfolio = () => {
                             <SiReact className={styles.project_icon}/>
                             <SiTypescript className={styles.project_icon}/>
                         </div> 
-                        <img src="../../../assets/projects/pokemon.png" alt="Pokemon guess challenge photo" loading='lazy'/>   
+                        <img src="../../../assets/projects/pokemon.PNG "alt="Pokemon guess challenge photo" loading='lazy'/>   
                     </div>
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>

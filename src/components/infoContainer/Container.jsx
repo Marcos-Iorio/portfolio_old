@@ -11,6 +11,9 @@ import styles from './container.module.scss'
 import Resume from '../resume/Resume'
 
 
+import cvEs from './CV-Marcos-Iorio.pdf'
+import cvEn from './CV_Marcos-Iorio-en.pdf'
+
 
 import { useMediaQuery } from 'react-responsive'
 
@@ -69,8 +72,8 @@ const Container = () => {
                                 
                                 <div className={styles.buttons}>
                                     
-                                    <a href="../../../assets/curriculum/CV_Marcos-Iorio-en.pdf" target="_blank">English</a>
-                                    <a href="../../../assets/curriculum/CV-Marcos-Iorio.pdf" target="_blank">Spanish</a>
+                                    <a href={cvEn} target="_blank">English</a>
+                                    <a href={cvEs} target="_blank">Spanish</a>
                                 </div>
                                 
                             </div>   
