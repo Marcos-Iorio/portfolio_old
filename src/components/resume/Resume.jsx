@@ -5,6 +5,8 @@ import {BsArrowRight} from 'react-icons/bs'
 
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
+import webCertificate from './certificates/coderhouse.jpeg'
+
 const Resume = () => {
 
     return(
@@ -43,7 +45,7 @@ const Resume = () => {
                     <p>2021</p><br/>
                     <span>Web Development in CorderHouse.</span>
                     <p>I learned HTML, CSS, SASS, GITHUB.</p>
-                    <a href="../../../assets/certificates/coderhouse.jpeg" target="_blank">Certificate</a>
+                    <a href={webCertificate} target="_blank">Certificate</a>
                 </li>
                 <li className={styles.item}>
                     <p>2021</p><br/>
