@@ -10,6 +10,8 @@ import Navbar from '../navbar/Navbar'
 import styles from './container.module.scss'
 import Resume from '../resume/Resume'
 
+
+
 import { useMediaQuery } from 'react-responsive'
 
 const Container = () => {

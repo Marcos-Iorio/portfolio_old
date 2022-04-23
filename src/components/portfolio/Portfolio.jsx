@@ -5,6 +5,7 @@ import styles from './portfolio.module.scss'
 
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
+
 const Portfolio = () => {
     return(
         <main>
@@ -27,7 +28,7 @@ const Portfolio = () => {
                             <SiSocketdotio className={styles.project_icon}/>
                             <SiMongodb className={styles.project_icon}/>
                         </div>
-                        <img src="../../../assets/projects/realtime.PNG" alt="Real time chat photo" loading='lazy'/>
+                        <img src="../../assets/realtime.PNG" alt="Real time chat photo" loading='lazy'/>
                     </div>
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>

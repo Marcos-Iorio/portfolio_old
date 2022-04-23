@@ -57,6 +57,7 @@ const Contact = () =>{
                 form.current.reset()
             }, (error) => {
                 resultMessage.current.textContent('An error has ocurred please contact me via Mail: marcossiorio@gmail.com')
+                console.log(error);
                 setTimeout(() =>{
                     resultMessage.current.remove()
                 }, 5000)
