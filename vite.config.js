@@ -4,14 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  server: {
-    proxy: {
-      // forward `/uploads/` endpoint to -> `http://localhost:5000/uploads/`
-      'assets/projects': {
-        target: 'http://localhost:3000/'
-      }
-    }
-  },
   build: {
     rollupOptions: {
       output: {
@@ -21,11 +13,13 @@ export default defineConfig({
             extType = 'img';
           }
           return `assets/${extType}/[name]-[hash][extname]`;
-        }
-      }
-    }
-  }
-})
+        },
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
+      },
+    },
+  },
+});
 
 
 
