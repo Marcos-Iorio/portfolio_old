@@ -5,7 +5,7 @@ import {BsArrowRight} from 'react-icons/bs'
 
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import webCertificate from '/assets/coderhouse.jpeg'
+import webCertificate from '/coderhouse.jpeg'
 
 const Resume = () => {
 

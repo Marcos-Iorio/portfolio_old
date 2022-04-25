@@ -5,11 +5,11 @@ import styles from './portfolio.module.scss'
 
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import realTime from '/assets/realtime.png'
-import pokemon from '/assets/pokemon.png'
-import api from '/assets/api.png'
-import ecommerce from '/assets/ecommerce.png'
-import sdg from '/assets/sdg.png'
+import realTime from '/realtime.png'
+import pokemon from '/pokemon.png'
+import api from '/api.png'
+import ecommerce from '/ecommerce.png'
+import sdg from '/sdg.png'
 
 const Portfolio = () => {
     return(
