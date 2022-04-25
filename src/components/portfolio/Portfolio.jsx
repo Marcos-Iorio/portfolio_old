@@ -5,6 +5,11 @@ import styles from './portfolio.module.scss'
 
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
+import realTime from '/assets/realtime.png'
+import pokemon from '/assets/pokemon.png'
+import api from '/assets/api.png'
+import ecommerce from '/assets/ecommerce.png'
+import sdg from '/assets/sdg.png'
 
 const Portfolio = () => {
     return(
@@ -28,7 +33,7 @@ const Portfolio = () => {
                             <SiSocketdotio className={styles.project_icon}/>
                             <SiMongodb className={styles.project_icon}/>
                         </div>
-                        <img src='public/assets/realtime.png' alt="Real time chat photo" loading='lazy'/>
+                        <img src={realTime} alt="Real time chat photo" loading='lazy'/>
                     </div>
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>
@@ -47,7 +52,7 @@ const Portfolio = () => {
                             <SiReact className={styles.project_icon}/>
                             <SiTypescript className={styles.project_icon}/>
                         </div> 
-                        <img src='public/assets/pokemon.png' alt="Pokemon guess challenge photo" loading='lazy'/>   
+                        <img src={pokemon} alt="Pokemon guess challenge photo" loading='lazy'/>   
                     </div>
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>
@@ -66,7 +71,7 @@ const Portfolio = () => {
                             <SiReact className={styles.project_icon}/>
                             <SiTailwindcss className={styles.project_icon}/>
                         </div> 
-                        <img src='public/assets/ecommerce.png' alt="Front-end of a ecommerce" loading='lazy'/>  
+                        <img src={ecommerce} alt="Front-end of a ecommerce" loading='lazy'/>  
                     </div>
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>
@@ -85,7 +90,7 @@ const Portfolio = () => {
                             <SiNodedotjs className={styles.project_icon}/>
                             <SiTypescript className={styles.project_icon}/>
                         </div>
-                        <img src='public/assets/api.png' alt="Illustration of a API" loading='lazy'/>   
+                        <img src={api} alt="Illustration of a API" loading='lazy'/>   
                     </div>
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>
@@ -103,7 +108,7 @@ const Portfolio = () => {
                         <div className={styles.project_techs}>
                             <SiWordpress className={styles.project_icon}/>
                         </div>
-                        <img src='public/assets/sdg.png' alt="Photo of SGD homepage" loading='lazy'/>   
+                        <img src={sdg} alt="Photo of SGD homepage" loading='lazy'/>   
                     </div>
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>
