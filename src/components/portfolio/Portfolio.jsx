@@ -38,7 +38,7 @@ const Portfolio = () => {
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>
                             <h1>Real time chat app</h1>
-                            <p>A real time chat app using React and tailwind in the front-end and Express and Socket.io in the back, to save all the messages I used MongoDB.</p>
+                            <p>A real time chat app using React and Tailwind in the front-end and Express and Socket.io in the back, to save all the messages I used MongoDB.</p>
                             <div className={styles.links}>
                                 <a href="https://realtime-chat-marcos-iorio.vercel.app/" target="_blank">Demo</a>
                                 <a href="https://github.com/Marcos-Iorio/realtime-chat" target="_blank">Repo</a>
@@ -76,7 +76,7 @@ const Portfolio = () => {
                     <div className={styles.project_info_container}>
                         <div className={styles.project_info}>
                             <h1>Front-end of Ecommerce</h1>
-                            <p>First project using react, I created the front-end of a ecommerce where you search for a product, I used a Intermediate API to retrieve the products data.</p>
+                            <p>First project using react, I created the front-end of an ecommerce where you search for a product, I used a Intermediate API to retrieve the products data.</p>
                             <div className={styles.links}>
                                 {/* <a href="https://pokemon-guess-challenge.vercel.app/">Demo</a> */}
                                 <a href="https://github.com/Marcos-Iorio/Ecommerce" target="_blank">Repo</a>

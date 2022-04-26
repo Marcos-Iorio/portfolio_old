@@ -38,8 +38,8 @@ const Home = () => {
                 </div>
                 <div className={styles.about}>
                     <h3 className={styles.about_title}>About <span>me</span></h3>
-                    <p className={styles.about_info}>I am a proactive person who likes to work in teams,
-                        I like the frontend and I am learning the latest technologies such as React, Express, Typescript and Mongo, my favourite language is javascript,
+                    <p className={styles.about_info}>I am a proactive person who likes to work in teams.
+                        I like frontend and I'm learning the latest technologies such as React, Express, Typescript and Mongo. My favourite language is javascript,
                         I studied and graduated as a systems analyst. Since last year i've been working as a web developer making and mantaining websites in Vtex and Wordpress. <br />
                         I would love to expand my knowledge and learn new technologies. <br/>
                         
@@ -49,17 +49,17 @@ const Home = () => {
                 <div className={styles.techs}>
                     <h3 className={styles.tech_title}><span>Technologies</span></h3>
                         <ul className={styles.tech_list}>
-                            <li className={styles.tech_icons}><SiHtml5/></li>
-                            <li className={styles.tech_icons}><SiCss3/></li>
-                            <li className={styles.tech_icons}><SiTailwindcss/></li>
-                            <li className={styles.tech_icons}><SiSass/></li>
-                            <li className={styles.tech_icons}><SiJavascript/></li>
-                            <li className={styles.tech_icons}><SiReact/></li>
-                            <li className={styles.tech_icons}><SiNodedotjs/></li>
-                            <li className={styles.tech_icons}><SiMysql/></li>
-                            <li className={styles.tech_icons}><SiMongodb/></li>
-                            <li className={styles.tech_icons}><SiGithub/></li>
-                            <li className={styles.tech_icons}><SiWordpress/></li>
+                            <li className={styles.tech_icons}><SiHtml5/><span>HTML5</span></li>
+                            <li className={styles.tech_icons}><SiCss3/><span>CSS</span></li>
+                            <li className={styles.tech_icons}><SiTailwindcss/><span>Tailwind</span></li>
+                            <li className={styles.tech_icons}><SiSass/><span>Sass</span></li>
+                            <li className={styles.tech_icons}><SiJavascript/><span>Javascript</span></li>
+                            <li className={styles.tech_icons}><SiReact/><span>React</span></li>
+                            <li className={styles.tech_icons}><SiNodedotjs/><span>NodeJs</span></li>
+                            <li className={styles.tech_icons}><SiMysql/><span>MySQL</span></li>
+                            <li className={styles.tech_icons}><SiMongodb/><span>MongoDB</span></li>
+                            <li className={styles.tech_icons}><SiGithub/><span>Github</span></li>
+                            <li className={styles.tech_icons}><SiWordpress/><span>Wordpress</span></li>
                             <li className={styles.tech_icons}>Vtex</li>
                         </ul>
                         <Link to='/resume'>

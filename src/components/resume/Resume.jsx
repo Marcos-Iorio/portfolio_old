@@ -35,10 +35,11 @@ const Resume = () => {
                 </li>
                 <li className={styles.item}>
                     <p>2019-2021</p><br/>
-                    <span>Degree in System Analyst.</span>
+                    <span>System Analyst.</span>
                     <p>
-                        Here I've learned the fundamentals of programming in languages like C and OOP in JAVA,
-                        also I learned CRUD and API with Slim in PHP, MySQL and Angular.
+                        Instituto Tecnólogico Beltrán. <br/>
+                        I've learned the fundamentals of programming in languages like C and OOP in JAVA,
+                        I've also learned CRUD and API with Slim in PHP, MySQL and Angular.
                     </p>
                 </li>
                 <li className={styles.item}>
@@ -50,7 +51,7 @@ const Resume = () => {
                 <li className={styles.item}>
                     <p>2021</p><br/>
                     <span>Modern Javascript in Udemy.</span>
-                    <p>I've learned the basics of Javascript and the last standards too, like Destructuring, Array Method, Arrow Function, Prototypes, Polyfiling.</p>
+                    <p>I've learned the basics of Javascript and the latest standards too, like Destructuring, Array Method, Arrow Function, Prototypes, Polyfiling.</p>
                 </li>
             </ul>
             <div className={styles.title}>
@@ -60,7 +61,7 @@ const Resume = () => {
                 <li className={styles.item}>
                     <p>2021-PRESENT</p><br/>
                     <span>Web developer in Lund Marketing.</span>
-                    <p>I create and mantain websites in Wordpress and Vtex, I improved a lot my css skills and I've learn about analytics and SEO.</p>
+                    <p>I create and mantain websites in Wordpress and Vtex, I improved a lot my CSS skills and I've learn about analytics and SEO.</p>
                     <a href="https://lundmarketing.io/" target="_blank">Website</a>
                 </li>
             </ul>
