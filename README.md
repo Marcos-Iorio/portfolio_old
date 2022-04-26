@@ -1,6 +1,6 @@
 # Porfolio
 
-Made with react and styled with Sass
+Made with react and styled with Sass using Vite
 
 ## Demo
 
