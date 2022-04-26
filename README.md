@@ -20,8 +20,8 @@ To make the app run succesfully it's necessary to create 3 enviroment variables 
 
 This KEYS are generated in emails.js service
 
-VITE_PUBLIC_KEY = xxxxx
-VITE_TEMPLATE_ID = xxxxx
+VITE_PUBLIC_KEY = xxxxx \n
+VITE_TEMPLATE_ID = xxxxx \n
 VITE_SERVICE_ID = xxxxx
 
 The portfolio is still in development :)
