@@ -10,8 +10,29 @@ import pokemon from '/pokemon.png'
 import api from '/api.png'
 import ecommerce from '/ecommerce.png'
 import sdg from '/sdg.png'
+import { motion } from 'framer-motion';
 
 const Portfolio = () => {
+    const list = {
+        hidden: { opacity: 1, scale: 0 },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+            delayChildren: 0.1,
+            staggerChildren: 0.4
+            }
+        }
+    }
+    
+    const item = {
+        hidden: { scale: 0, opacity: 0 },
+        visible: {
+            scale: 1,
+            opacity: 1
+        }
+    }
+
     return(
         <main>
             <HelmetProvider>
@@ -23,8 +44,8 @@ const Portfolio = () => {
             </HelmetProvider>
             <div className={styles.portfolio_container} id="portfolio">
             <h3 className={styles.title}>My projects</h3>
-            <ul className={styles.projects_list}>
-                <li className={styles.project}>
+            <motion.ul className={styles.projects_list} variants={list} initial="hidden" animate="visible">
+                <motion.li className={styles.project} variants={item}>
                     <div className={styles.project_img}>
                         <div className={styles.project_techs}>
                             <SiReact className={styles.project_icon}/>
@@ -45,8 +66,8 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                </li>
-                <li className={styles.project}>
+                </motion.li>
+                <motion.li className={styles.project} variants={item}>
                     <div className={styles.project_img}>
                         <div className={styles.project_techs}>
                             <SiReact className={styles.project_icon}/>
@@ -64,8 +85,8 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                </li>
-                <li className={styles.project}>
+                </motion.li>
+                <motion.li className={styles.project} variants={item}>
                     <div className={styles.project_img}>
                         <div className={styles.project_techs}>
                             <SiReact className={styles.project_icon}/>
@@ -83,8 +104,8 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                </li>
-                <li className={styles.project}>
+                </motion.li>
+                <motion.li className={styles.project} variants={item}>
                     <div className={styles.project_img}>
                         <div className={styles.project_techs}>
                             <SiNodedotjs className={styles.project_icon}/>
@@ -102,8 +123,8 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                </li>
-                <li className={styles.project}>
+                </motion.li>
+                <motion.li className={styles.project} variants={item}>
                     <div className={styles.project_img}>
                         <div className={styles.project_techs}>
                             <SiWordpress className={styles.project_icon}/>
@@ -120,8 +141,8 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                </li>
-            </ul>
+                </motion.li>
+            </motion.ul>
         </div>
         </main>
         

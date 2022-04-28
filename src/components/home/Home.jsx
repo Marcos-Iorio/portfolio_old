@@ -7,10 +7,47 @@ import {BsArrowRight} from 'react-icons/bs'
 
 import { useMediaQuery } from 'react-responsive'
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { motion } from "framer-motion"
 
 const Home = () => {
 
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+
+    //Framer animations
+    const personal_container = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 1.0
+          }
+        }
+    }
+
+    const about_container = {
+        hidden: { x: -50, opacity: 0},
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration : 0.7
+            }
+        }
+    }
+
+    const techs_container = {
+        hidden: {x: 50, opacity: 0},
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 1
+            }
+        }
+    }
+
+
 
     return(
         <main>
@@ -23,7 +60,7 @@ const Home = () => {
             </HelmetProvider>
             <div className={styles.home_container} id="about">
                 <div className={styles.fWidth_row}>
-                    <div className={styles.personal_info}>
+                    <motion.div className={styles.personal_info} initial="hidden" variants={personal_container} animate="visible">
                         <p>
                             <span>Age: </span>22
                         </p>
@@ -34,9 +71,9 @@ const Home = () => {
                             <span>E-mail: </span> marcossiorio@gmail.com
                         </p>
 
-                    </div>
+                    </motion.div>
                 </div>
-                <div className={styles.about}>
+                <motion.div className={styles.about} initial="hidden" variants={about_container} animate="visible">
                     <h3 className={styles.about_title}>About <span>me</span></h3>
                     <p className={styles.about_info}>I am a proactive person who likes to work in teams.
                         I like frontend and I'm learning the latest technologies such as React, Express, Typescript and Mongo. My favourite language is javascript,
@@ -45,8 +82,8 @@ const Home = () => {
                         
                     </p>
                     {!isTabletOrMobile ? <Link to="/contact-me" className={styles.contact}>Let's talk!</Link> : <a href="#contact-me" className={styles.contact}>Let's talk</a>}
-                </div>
-                <div className={styles.techs}>
+                </motion.div>
+                <motion.div className={styles.techs} initial="hidden" variants={techs_container} animate="visible">
                     <h3 className={styles.tech_title}><span>Technologies</span></h3>
                         <ul className={styles.tech_list}>
                             <li className={styles.tech_icons}><SiHtml5/><span>HTML5</span></li>
@@ -67,7 +104,7 @@ const Home = () => {
                                 <BsArrowRight className={styles.next_section}/>   
                             </div>
                         </Link> 
-                </div>
+                </motion.div>
             </div>
         </main>
     );

@@ -4,6 +4,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import party, { confetti } from "party-js";
 import emailjs from '@emailjs/browser';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import {motion } from 'framer-motion'
 
 import styles from './contact.module.scss';
 
@@ -66,6 +67,28 @@ const Contact = () =>{
         }
     }
 
+    const button = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.5
+          }
+        }
+    }
+
+    const inputs = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.5
+          }
+        }
+    }
+
     return(
         <main>
             <HelmetProvider>
@@ -81,18 +104,19 @@ const Contact = () =>{
                 </div>
                 <form action="" className={styles.form_container} onSubmit={sendMail} ref={form}>
                     <label htmlFor="name">Name*</label>
-                        <input type="text" name="user_name" placeholder="Your name :)" ref={user_name} required/>
+                        <motion.input type="text" name="user_name" placeholder="Your name :)" ref={user_name} variants={inputs} initial="hidden" animate="visible" required/>
                     <label htmlFor="mail">Mail*</label>
-                        <input type="mail" name="user_mail" id="" placeholder="example@123.com" ref={user_mail} required/>
+                        <motion.input type="mail" name="user_mail" id="" placeholder="example@123.com" ref={user_mail} variants={inputs} initial="hidden" animate="visible" required/>
                     <label htmlFor="message">Message*</label>
-                        <textarea name="message" cols="30" rows="7" placeholder="Your message..." ref={message} required></textarea>
+                        <motion.textarea name="message" cols="30" rows="7" placeholder="You first..." ref={message} variants={inputs} initial="hidden" animate="visible" required></motion.textarea>
                     <div ref={resultMessage} style={{color: 'red', fontSize: '20px', fontWeight:'500'}}></div>
-                    <input
+                    <motion.input
                         type="submit"
                         ref={sendButton}
                         className={styles.contact}
-                        value={!isLoading ? 'Send' : 'Sending...'}>
-                    </input>
+                        value={!isLoading ? 'Send' : 'Sending...'}
+                        variants={button} initial="hidden" animate="visible">
+                    </motion.input>
                     <div id="confettiParticle"></div>
                     <div className={styles.or_linkedin}>
                         <p>Or</p>
