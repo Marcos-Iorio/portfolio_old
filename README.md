@@ -1,6 +1,6 @@
 # Porfolio
 
-Made with react and styled with Sass using Vite
+Made with react and styled with Sass using Vite and using Framer Motion to animate.
 
 ## Demo
 
